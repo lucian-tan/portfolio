@@ -8,113 +8,45 @@
     <meta property="og:image" content="fb-img.png" />
     <title>Lucian Tan Design</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap"rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap" rel="stylesheet"> 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="css/compiled.min.css" rel="stylesheet">
   </head>
 
   <body>    
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="status">
-        <svg class="load-logo" viewBox="0 0 72 72" preserveAspectRatio="xMinYMax meet" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
-              <stop offset="0%" stop-color="#153B59">
-                <animate attributeName="stop-color" values="#153B59; #1CB5E0; #153B59;" dur="4s" repeatCount="indefinite"></animate>
-              </stop>
-              <stop offset="100%" stop-color="#1CB5E0">
-                <animate attributeName="stop-color" values="#1CB5E0; #153B59; #1CB5E0" dur="4s" repeatCount="indefinite"></animate>
-              </stop>
-            </linearGradient> 
-          </defs>
-          <path fill="url('#logo-gradient')" d="M36.53 22.21l.81-.23c1.1-.32 2.5-.62 2.98-1.06.87-.77 1.08-1.26 1.94-2.37.87-1.12 2.18-1.09 2.67-1.09.5 0 1.97 0 2.56.8.6.78-.19 1.94-1.08 2.76-1.09.99-1.88 1.83-4.37 3.66-1.4 1.03-2.88 2.4-3.94 3.17-1.05.77-1.2.7.48-1.82.58-.87.4-.64 1.2-2.02.29-.52.5-.97.63-1.35h-1.53c-.68 0-1.53.08-2.46.25-.33 1.53-1.3 3.3-2.56 5.45-2 3.45-4.29 8.62-3.16 7.67 1.15-.96 3.08-2.9 5.75-5.08 1.54-1.24 4.22-.96 5.08.29.86 1.25 1.06 2.88-2.97 6.62a149.72 149.72 0 0 0-7.38 7.57c3.2 1.54 5.28 2.56 6.27 3.07 1.82.93 4.42 1.63 6.05 1.63s3.89.12 6.56-1.63c1.5-.99 2.78-2.3 3.26-3.07s.71-1.3.25.77c-.2.86-.35 2.4-2.55 5.08-2.2 2.68-4.8 3.26-8.72 3.26-6.47 0-11.7-5.18-12.56-6.04-.2-.2-.49-.46-.86-.77l-3.13 2.78c-.77.67-1.16 1.06-2.69 2.2-3.11 2.34-3.96 1.73-4.15 1.64-.19-.1-1.34-.77.39-3.84 2.29-4.07 5.17-5.85 6.7-6.13a7.21 7.21 0 0 1 2.78 0 107.6 107.6 0 0 1 3.93-4.99c1.63-1.92 3.36-4.41 4.32-5.66.96-1.24 0-1.15-.96-.38a49.4 49.4 0 0 0-4.8 4.5c-.47.68-1.01.5-1.24.49-1.82-.1-2.4-1.44-2.4-2.79 0-1.34.77-4.79 2.11-8.05.3-.7.57-1.46.83-2.22-3.98 2.66-4.85 4.2-5.04 4.63-.2.44-.49 1.68-.49 3.06 0 1.38.5 1.98.2 2.77s-.7 1.38-1.88 1.08c-1.18-.3-2.27-1.68-2.86-2.76-.59-1.09-.3-1.39 0-2.57.3-1.19.2-2.59.2-2.96 0-.38.92 1.07 1.18 1.38.38.44.82.78 1.48.5.34-.16.34-.35 1.4-1.31 3.07-2.8 3.65-3.06 6.05-4.57.81-2.54 1.34-4.96 1.14-5.37-.29-.58-.77-.2-.87-.39-.1-.19.49-.84 1.63-.76 1.35.1 2.85.82 3.55 2.4.25.56.33 1.16.27 1.8zm-15.2 28.97a72.79 72.79 0 0 0 5.86-5.27c-.32-.39-.8-.58-1.45-.58-1.55 0-4.86 2.92-5.29 5.48-.08.47.28.83.88.37z" />
-        </svg>
-        <span id="load-msg">Loading..</span>
-      </div>
-    </div>
     <!-- Navigation -->
-    <header class="fadeIn" id="mainNav">
-      <button id="trigger-overlay" type="button">
-        <svg class="load-logo" width="72" height="72" viewBox="0 0 72 72" preserveAspectRatio="xMinYMax meet" xmlns="http://www.w3.org/2000/svg" data-tilt>
-            <path fill="#BAE0FE" d="M36.53 22.21l.81-.23c1.1-.32 2.5-.62 2.98-1.06.87-.77 1.08-1.26 1.94-2.37.87-1.12 2.18-1.09 2.67-1.09.5 0 1.97 0 2.56.8.6.78-.19 1.94-1.08 2.76-1.09.99-1.88 1.83-4.37 3.66-1.4 1.03-2.88 2.4-3.94 3.17-1.05.77-1.2.7.48-1.82.58-.87.4-.64 1.2-2.02.29-.52.5-.97.63-1.35h-1.53c-.68 0-1.53.08-2.46.25-.33 1.53-1.3 3.3-2.56 5.45-2 3.45-4.29 8.62-3.16 7.67 1.15-.96 3.08-2.9 5.75-5.08 1.54-1.24 4.22-.96 5.08.29.86 1.25 1.06 2.88-2.97 6.62a149.72 149.72 0 0 0-7.38 7.57c3.2 1.54 5.28 2.56 6.27 3.07 1.82.93 4.42 1.63 6.05 1.63s3.89.12 6.56-1.63c1.5-.99 2.78-2.3 3.26-3.07s.71-1.3.25.77c-.2.86-.35 2.4-2.55 5.08-2.2 2.68-4.8 3.26-8.72 3.26-6.47 0-11.7-5.18-12.56-6.04-.2-.2-.49-.46-.86-.77l-3.13 2.78c-.77.67-1.16 1.06-2.69 2.2-3.11 2.34-3.96 1.73-4.15 1.64-.19-.1-1.34-.77.39-3.84 2.29-4.07 5.17-5.85 6.7-6.13a7.21 7.21 0 0 1 2.78 0 107.6 107.6 0 0 1 3.93-4.99c1.63-1.92 3.36-4.41 4.32-5.66.96-1.24 0-1.15-.96-.38a49.4 49.4 0 0 0-4.8 4.5c-.47.68-1.01.5-1.24.49-1.82-.1-2.4-1.44-2.4-2.79 0-1.34.77-4.79 2.11-8.05.3-.7.57-1.46.83-2.22-3.98 2.66-4.85 4.2-5.04 4.63-.2.44-.49 1.68-.49 3.06 0 1.38.5 1.98.2 2.77s-.7 1.38-1.88 1.08c-1.18-.3-2.27-1.68-2.86-2.76-.59-1.09-.3-1.39 0-2.57.3-1.19.2-2.59.2-2.96 0-.38.92 1.07 1.18 1.38.38.44.82.78 1.48.5.34-.16.34-.35 1.4-1.31 3.07-2.8 3.65-3.06 6.05-4.57.81-2.54 1.34-4.96 1.14-5.37-.29-.58-.77-.2-.87-.39-.1-.19.49-.84 1.63-.76 1.35.1 2.85.82 3.55 2.4.25.56.33 1.16.27 1.8zm-15.2 28.97a72.79 72.79 0 0 0 5.86-5.27c-.32-.39-.8-.58-1.45-.58-1.55 0-4.86 2.92-5.29 5.48-.08.47.28.83.88.37z" />
-        </svg>
-      </button>
-    </header>
-    <!-- Menu Overlay -->
-    <div class="overlay overlay-hugeinc">
-      <div class="close-button-box">
-        <button type="button" class="overlay-close" alt="">
-          <i class="far fa-window-close"></i>
-        </button>
-      </div>
-      <nav>
-        <ul class="link-close">
-          <li><a class="navlist" href="#services">Services</a></li>
-          <li><a class="navlist" href="#work">Work</a></li>
-          <li><a class="navlist" href="#contact">Contact</a></li>
-
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="mailto:luciant.design@gmail.com" class="extl">Email</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/luciantan">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://drive.google.com/open?id=168stuo-1tw6PTQx_5hNBSBn3FuQ4iXGU" target="_blank">Résumé</a>
+          </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
+
 
     <!-- Header -->
     <section id="intro" class="content-column">
       <div class="intro-box" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
         <h1 class="intro-title">Hi, I'm Lucian Tan.</h1>
-        <h3 class="intro-sub">I design user-centered products to help businesses succeed. Ready for remote collaboration.</h3>
-        <a class="btn btn-ter" href="mailto:luciant.design@gmail.com"><i class="far fa-envelope"></i> Email</a><a class="btn btn-ter" href="https://drive.google.com/open?id=168stuo-1tw6PTQx_5hNBSBn3FuQ4iXGU" target="_blank"><i class="far fa-file-pdf"></i> Résumé</a>
+        <h3 class="intro-sub">I connect the dots between users and businesses with digital experiences, and designed multi-platform products, internal tools, and design systems.</h3>
       </div>
-    </section>
-
-    <section id="services">
-      <div class="section-box">
-        <h2 class="section-title">Services</h2>
-      </div>
-      <div class="content-column-l">
-        <div class="serv-box-l">
-          <h3>Discover & Understand</h3>
-          <p>Through qualitative and quantitative research methods, I seek to understand problems fully to generate deeper insights. I collaborate with stakeholders for context and inspiration, so as to identify high-potential opportunities from there.</p>
-          <div class="ghost-img-r" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-            <img class="srv-img-a" src="/img/SV-ivt.svg">
-          </div>
-        </div>
-        <div class="img-box-l serv-img" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-          <img class="srv-img-a" src="/img/SV-ivt.svg">
-        </div>
-      </div>
-      <div class="content-column-r">
-        <div class="img-box-r serv-img" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-          <img class="srv-img-a" src="/img/SV-ca.svg">
-        </div>
-        <div class="serv-box-r">
-          <h3>Experiment & Validate</h3>
-          <p>From sketching wireframes to crafting hi-fidelity mockups, I create & test hypotheses, structure information, ideate & transform concepts into tangible, interactive visuals. All this, with scalability and accessibility in mind.</p>
-          <div class="ghost-img-l" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-            <img class="srv-img-a" src="/img/SV-ca.svg">
-          </div>
-        </div>
-      </div>
-      <div class="content-column-l">
-        <div class="serv-box-l">
-          <h3>Analyse & Improve</h3>
-          <p>I tap on usage analytics and feedback systems to measure success metrics, and devise strategies to overcome new issues. I also introduce tools and methodologies to improve design team processes.</p>
-          <div class="ghost-img-r" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-            <img class="srv-img-a" src="/img/SV-anl.svg">
-          </div>
-        </div>
-        <div class="img-box-l serv-img" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
-          <img class="srv-img-a" src="/img/SV-anl.svg">
-        </div>
+      <div class="section-box" id="section-work">
+        <h2 class="section-title">Work</h2>
+        <img class="arrow" src="img/arrow.svg">
       </div>
     </section>
     
     <!-- Portfolio Grid -->
     <section id="work">
-      <div class="section-box">
-        <h2 class="section-title">Work</a></h2>
-      </div>
+
       <div class="content-column-r">
         <div class="img-box-r" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
           <img srcset="/img/WK-ne-1x.png 360w, /img/WK-ne-2x.png 720w, /img/WK-ne-3x.png 1080w, /img/WK-ne-4x.png 1440w" src="/img/WK-ne-3x.png">
@@ -123,7 +55,7 @@
           <h3>Ninja Easy: An on-demand pickup service</h3>
           <p class="caption work-type">Case Study</p>
           <p>Discover how a multi-platform pickup service was designed to make requesting logistics services a breeze for consumers in Southeast Asia.</p>
-          <a class="btn btn-pri" href="https://medium.com/@Lucian_Design/ninja-easy-an-on-demand-pickup-service-6c9661cd3289" target="_blank">Read on Medium <i class="fas fa-external-link-square-alt"></i></a>
+          <a class="btn btn-sec" href="https://medium.com/@Lucian_Design/ninja-easy-an-on-demand-pickup-service-6c9661cd3289" target="_blank">Read on Medium <i class="fas fa-external-link-square-alt"></i></a>
         </div>
       </div>
       <div class="content-column-l">
@@ -134,7 +66,7 @@
           <h3>Ninja Driver: A digital route manifest for couriers</h3>
           <p class="caption work-type">Case Study</p>
           <p>Read insights on designing an Android app used by couriers across Southeast Asia to accommodate new business needs.</p>
-          <a class="btn btn-pri" href="https://medium.com/@Lucian_Design/ninja-driver-a-digital-route-manifest-for-couriers-adbf6cd728ae" target="_blank">Read on Medium <i class="fas fa-external-link-square-alt"></i></a>
+          <a class="btn btn-sec" href="https://medium.com/@Lucian_Design/ninja-driver-a-digital-route-manifest-for-couriers-adbf6cd728ae" target="_blank">Read on Medium <i class="fas fa-external-link-square-alt"></i></a>
         </div>
         <div class="img-box-l hide-r" data-scroll="once toggle(.fromTopIn, .fromTopOut)">
           <img srcset="/img/WK-nd-1x.png 360w, /img/WK-nd-2x.png 720w, /img/WK-nd-3x.png 1080w, /img/WK-nd-4x.png 1440w" src="/img/WK-nd-3x.png">
@@ -146,7 +78,7 @@
         </div>
         <div class="work-box-r">
             <h3>Second Measure: Visualizing alternative data</h3>
-            <p class="caption work-type">Case Study</p>
+            <p class="caption work-type">Process</p>
             <p>Learn more about the design process that led to ~40% top-line annual revenue growth of the business.</p>
             <a class="btn btn-dis">Coming Soon</a>
         </div>
@@ -160,70 +92,31 @@
         </div>
       </div>
     </section>
-  
-    <section id="contact">
-      <div class="section-box">
-        <h3 class="section-title">Contact</h3>
-      </div>
-      <div class="contact-box">
-        <p class="contact-text" data-scroll="once toggle(.fromTopIn, .fromTopOut)">Reach me via</p>
-        <ul class="social">
-          <li class="icon-box">
-            <a href="mailto:luciant.design@gmail.com" class="extl"><i class="far fa-envelope"></i></a>
-          </li>
-          <li class="icon-box">
-            <a href="https://www.linkedin.com/in/luciantan/" target="_blank"><i class="fab fa-linkedin-in"> </i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="contact-box">
-        <p class="contact-text" data-scroll="once toggle(.fromTopIn, .fromTopOut)">Résumé</p>
-        <ul class="social">
-          <li class="icon-box">
-            <a href="https://drive.google.com/open?id=168stuo-1tw6PTQx_5hNBSBn3FuQ4iXGU" target="_blank"><i class="far fa-file-pdf"></i></a>
-          </li>
-        </ul>
-      </div>
-    </section>
    
     <footer>
-      <div>Coded + Copyright &copy; Lucian Tan <!--Yong Kuan--> 2020</div>
+      <div>Background from <a href="https://www.vantajs.com/" target="_blank">Vanta.js</a> | Copyright &copy; Lucian Tan <!--Yong Kuan--> 2020</div>
     </footer>
+
+    <div id="backdrop"> </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Preloader Javascript -->
-    <script type="text/javascript">
-      $(window).on('load', function() { 
-        $('#status').fadeOut(); 
-        $('#preloader').delay(100).fadeOut('slow');
-        $('body').delay(100).css({'overflow':'visible'});
-      })
-    </script> 
-
-
-    <!--Menu-->
-    <script src="js/navhide.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/navmenu.js"></script>
     
     <!-- Scroll Animation Javascript -->
     <script src="js/ScrollTrigger.min.js"></script>
     <script>
-    window.counter = function() {
-      var span = this.querySelector('span');
-      var current = parseInt(span.textContent);
+      window.counter = function() {
+        var span = this.querySelector('span');
+        var current = parseInt(span.textContent);
 
-      span.textContent = current + 1;
-    };
+        span.textContent = current + 1;
+      };
 
-    document.addEventListener('DOMContentLoaded', function(){
-      var trigger = new ScrollTrigger({
-        addHeight: true
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+          addHeight: true
+        });
       });
-    });
     </script>
 
     <!-- Tilt.js -->
@@ -254,6 +147,24 @@
         perspective: 100,
         speed: 1200,
         transition: true,
+      })
+    </script>
+
+    <script src="js/three.r95.min.js"></script>
+    <script src="js/vanta.net.min.js"></script>
+    <script>
+      VANTA.NET({
+        el: "#backdrop",
+        mouseControls: true,
+        touchControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x0b4361,
+        backgroundColor: 0x030313,
+        maxDistance: 35.00,
+        spacing: 30.00
       })
     </script>
   </body>
